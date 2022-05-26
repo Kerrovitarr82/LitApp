@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Denis/AndroidStudioProjects/LitApp/app/src/main/res/layout/activity_main.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/Denis/AndroidStudioProjects/LitApp/app/src/main/res/layout/activity_readeractivity.xml" value="0.3609375" />
+        <entry key="..\:/Users/Denis/AndroidStudioProjects/LitApp/app/src/main/res/layout/toc.xml" value="0.3609375" />
+        <entry key="..\:/Users/Denis/AndroidStudioProjects/LitApp/app/src/main/res/layout/toc_item.xml" value="0.3609375" />
+        <entry key="..\:/Users/Denis/AndroidStudioProjects/LitApp/app/src/main/res/menu/app.xml" value="0.3609375" />
+        <entry key="..\:/Users/Denis/AndroidStudioProjects/LitApp/fbreader/extras/src/main/res/layout/fbreader_selection_panel.xml" value="0.3609375" />
+        <entry key="..\:/Users/Denis/AndroidStudioProjects/LitApp/fbreader/text_extras/src/main/res/layout/fbreader_navigation_panel.xml" value="0.3609375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

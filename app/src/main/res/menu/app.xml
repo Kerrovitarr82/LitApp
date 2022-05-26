@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
+        android:id="@+id/menu_table_of_contents"
+        app:showAsAction="never"
+        android:title="Table of Contents" />
+    <item
+        android:id="@+id/menu_zoom_in"
+        app:showAsAction="never"
+        android:title="Zoom In" />
+    <item
+        android:id="@+id/menu_zoom_out"
+        app:showAsAction="never"
+        android:title="Zoom Out" />
+    <item
+        android:id="@+id/menu_color_profile"
+        android:title="Color profile">
+        <menu>
+            <item
+                android:id="@+id/menu_color_profile_light"
+                android:title="Default light"
+                android:checkable="true" />
+            <item
+                android:id="@+id/menu_color_profile_dark"
+                android:title="Default dark"
+                android:checkable="true" />
+            <item
+                android:id="@+id/menu_color_profile_dark_with_bg"
+                android:title="Dark with background"
+                android:checkable="true" />
+            <item
+                android:id="@+id/menu_color_profile_pink"
+                android:title="Pink"
+                android:checkable="true" />
+        </menu>
+    </item>
+</menu>

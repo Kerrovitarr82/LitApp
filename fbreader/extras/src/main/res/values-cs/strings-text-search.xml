@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="text_search_find_next_description">Další výskyt</string>
+	<string name="text_search_find_previous_description">Předchozí výskyt</string>
+	<string name="text_search_close_description">Zavřít</string>
+	<string name="text_search_not_found_message">V knize není bohužel žádný vhodný text</string>
+</resources>

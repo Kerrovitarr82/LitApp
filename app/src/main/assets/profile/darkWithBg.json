@@ -1,0 +1,15 @@
+{
+  "background": "bg_black_paper.jpg",
+  "fill": "tile",
+  "text": "#c0c0c0",
+  "hyperlink": "#3c8ed0",
+  "hyperlink:visited": "#c88bff",
+  "selection:bg": "#5283c2",
+  "highlighting:bg": "#606080",
+  "highlighting:fg": null,
+  "footer:old": "#555555",
+  "footer:bg": "#444444",
+  "footer:active": "#bbbbbb",
+  "footer:inactive": "#777777",
+  "image:adjusting": "lighten"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">In die Zwischenablage kopieren</string>
+	<string name="selection_panel_description_share">Text teilen</string>
+	<string name="selection_panel_description_open_in_dictionary">Im Wörterbuch nachschlagen</string>
+	<string name="selection_panel_description_translate">Übersetzen</string>
+	<string name="selection_panel_description_bookmark">Lesezeichen hinzufügen</string>
+	<string name="selection_panel_description_close">Schließen</string>
+</resources>

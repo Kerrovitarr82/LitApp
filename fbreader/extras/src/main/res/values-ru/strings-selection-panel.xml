@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">Скопировать в буфер</string>
+	<string name="selection_panel_description_share">Поделиться</string>
+	<string name="selection_panel_description_open_in_dictionary">Посмотреть в словаре</string>
+	<string name="selection_panel_description_translate">Перевести</string>
+	<string name="selection_panel_description_search_on_web">Искать в сети</string>
+	<string name="selection_panel_description_bookmark">Оставить закладку</string>
+	<string name="selection_panel_description_close">Закрыть</string>
+</resources>

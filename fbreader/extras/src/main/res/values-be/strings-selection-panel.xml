@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">Скапіраваць у буфер абмену</string>
+	<string name="selection_panel_description_share">Падзяліцца тэкстам</string>
+	<string name="selection_panel_description_open_in_dictionary">Адкрыць у слоўніку</string>
+	<string name="selection_panel_description_translate">Перакласці</string>
+	<string name="selection_panel_description_bookmark">Закладка</string>
+	<string name="selection_panel_description_close">Закрыць</string>
+</resources>

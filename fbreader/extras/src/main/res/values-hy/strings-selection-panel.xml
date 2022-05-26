@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">Պատճենել սեղմատախտակում</string>
+	<string name="selection_panel_description_share">Տարածել</string>
+	<string name="selection_panel_description_open_in_dictionary">Նայել բառարանում</string>
+	<string name="selection_panel_description_translate">Թարգմանել</string>
+	<string name="selection_panel_description_bookmark">Էջանշել</string>
+	<string name="selection_panel_description_close">Փակել</string>
+</resources>

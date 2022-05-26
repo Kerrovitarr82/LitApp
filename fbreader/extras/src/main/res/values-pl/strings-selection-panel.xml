@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">Skopiuj do schowka</string>
+	<string name="selection_panel_description_share">Udostępnij tekst</string>
+	<string name="selection_panel_description_open_in_dictionary">Sprawdź w słowniku</string>
+	<string name="selection_panel_description_translate">Tłumacz</string>
+	<string name="selection_panel_description_bookmark">Zakładka</string>
+	<string name="selection_panel_description_close">Zamknij</string>
+</resources>

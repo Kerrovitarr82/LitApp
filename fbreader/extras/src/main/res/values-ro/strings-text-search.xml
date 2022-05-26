@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="text_search_find_next_description">Urmatoarea apariție</string>
+	<string name="text_search_find_previous_description">Apariția precedenta</string>
+	<string name="text_search_close_description">Închide</string>
+	<string name="text_search_not_found_message">Nu există nici un text adecvat în carte, îmi pare rău</string>
+</resources>

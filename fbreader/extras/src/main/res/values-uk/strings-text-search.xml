@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="text_search_find_next_description">Наступну співпадіння</string>
+	<string name="text_search_find_previous_description">Попереднє співпадіння</string>
+	<string name="text_search_close_description">Закрити</string>
+	<string name="text_search_not_found_message">У цій книзі нема такого тексту</string>
+</resources>

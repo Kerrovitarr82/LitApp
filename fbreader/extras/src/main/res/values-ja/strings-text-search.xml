@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="text_search_find_next_description">次の一致</string>
+	<string name="text_search_find_previous_description">前の一致</string>
+	<string name="text_search_close_description">閉じる</string>
+	<string name="text_search_not_found_message">申し訳ありませんが、本の中に合致する文が見当たりません</string>
+</resources>

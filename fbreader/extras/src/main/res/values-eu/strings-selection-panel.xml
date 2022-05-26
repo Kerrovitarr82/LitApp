@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">Kopiatu arbelera</string>
+	<string name="selection_panel_description_share">Partekatu testua</string>
+	<string name="selection_panel_description_open_in_dictionary">Ireki hiztegian</string>
+	<string name="selection_panel_description_translate">Itzuli</string>
+	<string name="selection_panel_description_bookmark">Egin laster-marka</string>
+	<string name="selection_panel_description_close">Itxi</string>
+</resources>

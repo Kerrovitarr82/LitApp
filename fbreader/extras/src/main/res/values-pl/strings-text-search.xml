@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="text_search_find_next_description">Następne</string>
+	<string name="text_search_find_previous_description">Poprzednie</string>
+	<string name="text_search_close_description">Zamknij</string>
+	<string name="text_search_not_found_message">Niestety w książce nie ma pasującego tekstu</string>
+</resources>

@@ -1,0 +1,11 @@
+{
+  "background": "#FCE4EC",
+  "text": "#D81B60",
+  "hyperlink": "#880E4F",
+  "selection:bg": "#F48FB1",
+  "highlighting:bg": "#F48FB1",
+  "footer:bg": "#AD1457",
+  "footer:active": "#F8BBD0",
+  "footer:inactive": "#D81B60",
+  "image:adjusting": "darken"
+}

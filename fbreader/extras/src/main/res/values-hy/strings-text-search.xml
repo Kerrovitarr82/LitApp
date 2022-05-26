@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="text_search_find_next_description">Գտնել հաջորդը</string>
+	<string name="text_search_find_previous_description">Գտնել նախորդը</string>
+	<string name="text_search_close_description">Փակել</string>
+	<string name="text_search_not_found_message">Գրքում նման հատված չկա</string>
+</resources>

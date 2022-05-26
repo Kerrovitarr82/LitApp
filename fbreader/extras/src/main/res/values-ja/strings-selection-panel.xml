@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">クリップボードにコピー</string>
+	<string name="selection_panel_description_share">本文を共有</string>
+	<string name="selection_panel_description_open_in_dictionary">辞書で開く</string>
+	<string name="selection_panel_description_translate">翻訳</string>
+	<string name="selection_panel_description_bookmark">しおりを作成</string>
+	<string name="selection_panel_description_close">閉じる</string>
+</resources>

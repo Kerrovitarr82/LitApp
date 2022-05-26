@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.fbreader.extras.info.InfoView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/info_view"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:visibility="gone"
+	android:focusable="false"
+	android:textSize="60sp"
+	android:textColor="#CC888888"
+	android:background="@android:color/transparent"
+	android:paddingLeft="30dp"
+	android:paddingRight="30dp"
+/>

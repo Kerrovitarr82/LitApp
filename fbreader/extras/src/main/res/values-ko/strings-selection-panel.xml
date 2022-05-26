@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">클립보드로 복사</string>
+	<string name="selection_panel_description_open_in_dictionary">사전으로 열기</string>
+</resources>

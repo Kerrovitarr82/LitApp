@@ -1,0 +1,16 @@
+{
+	"background": "wallpapers/paper.jpg",
+	"fill": "tile",
+	"text": "#000000",
+	"hyperlink": "#3c8bff",
+	"hyperlink:visited": "#c88bff",
+	"selection:bg": "#5283c2",
+	"highlighting:bg": "#5283c2",
+	"highlighting:fg": null,
+	"footer:old": "#aaaaaa",
+	"footer:bg": "#444444",
+	"footer:active": "#bbbbbb",
+	"footer:inactive": "#777777",
+	"css": "use",
+	"image:adjusting": "darken"
+}

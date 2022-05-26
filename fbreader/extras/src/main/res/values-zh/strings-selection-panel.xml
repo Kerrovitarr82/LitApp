@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">复制到剪贴板</string>
+	<string name="selection_panel_description_share">分享文本</string>
+	<string name="selection_panel_description_open_in_dictionary">打开字典</string>
+	<string name="selection_panel_description_translate">翻译</string>
+	<string name="selection_panel_description_bookmark">书签</string>
+	<string name="selection_panel_description_close">关闭</string>
+</resources>

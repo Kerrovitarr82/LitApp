@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">کلپ بورڈ میں کاپی کریں</string>
+	<string name="selection_panel_description_share">متن کا اشتراک کریں</string>
+	<string name="selection_panel_description_open_in_dictionary">لغت میں کھولیں</string>
+	<string name="selection_panel_description_translate">ترجمہ کریں</string>
+	<string name="selection_panel_description_bookmark">بک مارک کریں</string>
+	<string name="selection_panel_description_close">بند کریں</string>
+</resources>

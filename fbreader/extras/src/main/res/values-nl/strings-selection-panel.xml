@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">Kopieer naar klembord</string>
+	<string name="selection_panel_description_share">Deel tekst</string>
+	<string name="selection_panel_description_open_in_dictionary">Openen in woordenboek</string>
+	<string name="selection_panel_description_translate">Vertalen</string>
+	<string name="selection_panel_description_bookmark">Bladwijzer maken</string>
+	<string name="selection_panel_description_close">Sluiten</string>
+</resources>

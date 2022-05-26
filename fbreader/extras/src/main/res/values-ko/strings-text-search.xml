@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="text_search_not_found_message">이 책에는 적합한 텍스트가 없습니다</string>
+</resources>

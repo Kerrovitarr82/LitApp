@@ -1,0 +1,12 @@
+{
+	"background": "#000000",
+	"text": "#c0c0c0",
+	"selection:bg": "#555555",
+	"highlighting:bg": "#555555",
+	"footer:old": "#555555",
+	"footer:bg": "#444444",
+	"footer:active": "#bbbbbb",
+	"footer:inactive": "#777777",
+	"css": "ignore",
+	"image:adjusting": "lighten"
+}

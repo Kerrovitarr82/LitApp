@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="selection_panel_description_copy_to_clipboard">Kopírovat do schránky</string>
+	<string name="selection_panel_description_share">Sdílet text</string>
+	<string name="selection_panel_description_open_in_dictionary">Otevřít ve slovníku</string>
+	<string name="selection_panel_description_translate">Přeložit</string>
+	<string name="selection_panel_description_bookmark">Přidat do záložek</string>
+	<string name="selection_panel_description_close">Zavřít</string>
+</resources>
