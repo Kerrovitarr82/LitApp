@@ -87,6 +87,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        lvBooks.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                db = databaseHelper.getWritableDatabase();
+                db.delete(DatabaseHelper.TABLE, "_id = ?", new String[]{String.valueOf(l)});
+                onResume();
+                return true;
+            }
+        });
     }
 
     private boolean checkBefore30() {
@@ -133,5 +142,11 @@ public class MainActivity extends AppCompatActivity {
         return returnCursor.getString(nameIndex);
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        db.close();
+        bookCursor.close();
+    }
 }
 
