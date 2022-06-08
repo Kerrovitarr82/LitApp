@@ -48,7 +48,6 @@ public class ReaderActivity extends AppCompatActivity {
                 widget.post(new Runnable() {
                     @Override
                     public void run() {
-                        widget.gotoPage(0);
                         setTitle(book.getTitle());
                     }
                 });
