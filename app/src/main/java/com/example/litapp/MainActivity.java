@@ -1,64 +1,40 @@
 package com.example.litapp;
 
 import android.Manifest;
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.provider.OpenableColumns;
 import android.provider.Settings;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
+import android.view.MenuItem;
 
-import androidx.activity.result.ActivityResultCallback;
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    private ListView lvBooks;
-    private FloatingActionButton btnAddBook;
-    private static final int REQUEST_PERMISSION = 101;
-    private DatabaseHelper databaseHelper;
-    private SQLiteDatabase db;
-    private Cursor bookCursor;
-    private SimpleCursorAdapter bookAdapter;
-    private long bookId = 0;
-    private Context context = this;
+    public static Context context;
+    private BottomNavigationView bottomNavigationView;
 
-    ActivityResultLauncher<String> mGetContent = registerForActivityResult(new ActivityResultContracts.GetContent(), new ActivityResultCallback<Uri>() {
-        @Override
-        public void onActivityResult(Uri result) {
-            db = databaseHelper.getWritableDatabase();
-            ContentValues contentValues = new ContentValues();
-            contentValues.put(DatabaseHelper.COLUMN_NAME, getFileName(result));
-            contentValues.put(DatabaseHelper.COLUMN_URI, result.toString());
-            db.insert(DatabaseHelper.TABLE, null, contentValues);
-        }
-    });
+    public static Context getContextOfApplication() {
+        return context;
+    }
+
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        lvBooks = findViewById(R.id.lvBooks);
-        btnAddBook = findViewById(R.id.btnAddBook);
-
-        databaseHelper = new DatabaseHelper(getApplicationContext());
+        context = getApplicationContext();
 
         if (Build.VERSION.SDK_INT < 30) {
             if (!checkBefore30()) {
@@ -67,35 +43,29 @@ public class MainActivity extends AppCompatActivity {
         } else {
             check30AndAfter();
         }
+        getSupportFragmentManager().beginTransaction().replace(R.id.containerView, new AllBooksFragment()).commit();
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
-        btnAddBook.setOnClickListener(new View.OnClickListener() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-                mGetContent.launch("*/*");
-            }
-        });
-        lvBooks.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(MainActivity.this, ReaderActivity.class);
-                db = databaseHelper.getReadableDatabase();
-                bookCursor = db.rawQuery("select * from " + DatabaseHelper.TABLE + " where " +
-                        DatabaseHelper.COLUMN_ID + "=?", new String[]{String.valueOf(l)});
-                bookCursor.moveToFirst();
-                String fileName = bookCursor.getString(2);
-                intent.putExtra(ReaderActivity.EXTRA_NAME, fileName);
-                startActivity(intent);
-            }
-        });
-        lvBooks.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                db = databaseHelper.getWritableDatabase();
-                db.delete(DatabaseHelper.TABLE, "_id = ?", new String[]{String.valueOf(l)});
-                onResume();
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.allBooksFragment:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containerView, new AllBooksFragment()).commit();
+                        break;
+                    case R.id.readBooksFragment:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containerView, new ReadBooksFragment()).commit();
+                        break;
+                    case R.id.plannedBooksFragmentFragment:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containerView, new PlannedBooksFragment()).commit();
+                        break;
+                }
+
+
                 return true;
             }
         });
+
     }
 
     private boolean checkBefore30() {
@@ -122,31 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        db = databaseHelper.getReadableDatabase();
-        bookCursor = db.rawQuery("select * from " + DatabaseHelper.TABLE, null);
-        String[] headers = new String[]{DatabaseHelper.COLUMN_NAME};
-        bookAdapter = new SimpleCursorAdapter(this, android.R.layout.two_line_list_item,
-                bookCursor, headers, new int[]{android.R.id.text1}, 0);
-        lvBooks.setAdapter(bookAdapter);
-    }
-
-    public String getFileName(Uri uri) {
-        Cursor returnCursor = getContentResolver().query(uri, null, null, null, null);
-        int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
-        returnCursor.moveToFirst();
-        return returnCursor.getString(nameIndex);
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        db.close();
-        bookCursor.close();
     }
 }
 

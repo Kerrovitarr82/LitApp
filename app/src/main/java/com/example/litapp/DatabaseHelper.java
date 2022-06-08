@@ -12,6 +12,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_ID = "_id";
     public static final String COLUMN_NAME = "name";
     public static final String COLUMN_URI = "uri";
+    public static final String COLUMN_PLANNED = "planned";
+    public static final String COLUMN_READ = "read";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, SCHEMA);
@@ -19,7 +21,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE books (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_NAME + " TEXT, " + COLUMN_URI + " TEXT);");
+        db.execSQL("CREATE TABLE books (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                COLUMN_NAME + " TEXT, " + COLUMN_URI + " TEXT, " + COLUMN_READ + " INTEGER, " + COLUMN_PLANNED + " INTEGER);");
     }
 
     @Override
