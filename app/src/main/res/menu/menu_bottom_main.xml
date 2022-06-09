@@ -7,7 +7,7 @@
     <item
         android:id="@+id/readBooksFragment"
         android:icon="@drawable/ic_baseline_menu_book_24"
-        android:title="Читаю" />
+        android:title="Прочитанные" />
 
     <item
         android:id="@+id/plannedBooksFragmentFragment"

@@ -1,42 +1,43 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/menu_search"
         android:icon="@drawable/ic_menu_search"
         app:showAsAction="ifRoom|collapseActionView"
-        android:title="Search"
+        android:title="Поиск"
         app:actionViewClass="androidx.appcompat.widget.SearchView" />
     <item
         android:id="@+id/menu_table_of_contents"
         app:showAsAction="never"
-        android:title="Table of Contents" />
+        android:title="Оглавление" />
     <item
         android:id="@+id/menu_zoom_in"
         app:showAsAction="never"
-        android:title="Zoom In" />
+        android:title="Увеличить шрифт" />
     <item
         android:id="@+id/menu_zoom_out"
         app:showAsAction="never"
-        android:title="Zoom Out" />
+        android:title="Уменьшить шрифт" />
     <item
         android:id="@+id/menu_color_profile"
-        android:title="Color profile">
+        android:title="Цвет фона">
         <menu>
             <item
                 android:id="@+id/menu_color_profile_light"
-                android:title="Default light"
+                android:title="Светлый"
                 android:checkable="true" />
             <item
                 android:id="@+id/menu_color_profile_dark"
-                android:title="Default dark"
+                android:title="Темный"
                 android:checkable="true" />
             <item
                 android:id="@+id/menu_color_profile_dark_with_bg"
-                android:title="Dark with background"
+                android:title="Темный 2"
                 android:checkable="true" />
             <item
                 android:id="@+id/menu_color_profile_pink"
-                android:title="Pink"
+                android:title="@string/pink"
                 android:checkable="true" />
         </menu>
     </item>
